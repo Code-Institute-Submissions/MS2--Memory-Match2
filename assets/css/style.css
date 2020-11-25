@@ -81,13 +81,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    perspective: 100rems;
 }
 
-.card.show-card .card-back {
+.card:hover .card-back {
     transform: rotateY(-180deg);
 }
 
-.card.show-card .card-front {
+.card:hover .card-front {
     transform: rotateY(0);
 }
 
@@ -106,6 +107,7 @@ body {
     transform: rotateY(180deg);
 }
 
+
 .card-face {
     position: absolute;
     width: 100%;
@@ -114,7 +116,7 @@ body {
     justify-content: center;
     align-content: center;
     backface-visibility: hidden;
-    
+    transition: transform 600ms ease-in-out;
 }
 
 .icon {
