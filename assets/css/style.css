@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap&family=Lexend+Zetta&display=swap&family=Squada+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, #df5a9c, #64c6e3);
+    background-repeat: no-repeat;
+}
+
+/*-----------------------------------------------------------BACKGROUND STYLING*/
+.background2 {
+    background-image: url("../images/Game\ page\ figma\ blur.jpg");
+    padding-left: 0;
+    padding-right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------------------------------------------LOGO STYLING*/
+.logo {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.logo2 {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.logo2 img {
+    max-width: 100%;
+}
+
+/*------------------------------------------------------------CARD STYLING*/
+.card-container {
+    width: 530px;
+    height: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.card-container:active {
+}
+
+.game-card {
+    width: 25%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back, .card-front {
+    position: absolute;
+}
+
+.card-back {
+    z-index: -1;
+}
+
+
+/*------------------------------------------------------TIMER STYLING*/
+.timer {
+    font-family: Righteous, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #032749;
+    padding-bottom: 1.5rem; 
+}
+
+.footnote-rules {
+    font-family: Righteous, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #032749;
+    padding: 2rem; 
+}
