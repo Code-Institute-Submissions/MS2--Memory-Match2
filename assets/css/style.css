@@ -59,7 +59,7 @@ body {
     font-weight: 400;
     text-align: center;
     color: #032749;
-    padding-bottom: 1.5rem; 
+    padding-bottom: 0.7rem; 
 }
 
 .reset-btn {
@@ -80,16 +80,28 @@ body {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px;
     justify-content: center;
+}
+
+.card.show-card .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.show-card .card-front {
+    transform: rotateY(0);
 }
 
 .card {
     background-color: #032749;
-    height: 150px;
-    width: 120px;
+    height: 130px;
+    width: 100px;
     margin: 10px;
     position: relative;
+    border-radius: 20px;
+}
+
+.card-front {
+    transform: rotateX(180deg);
 }
 
 .card-face {
@@ -99,6 +111,8 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
+    backface-visibility: hidden;
+    
 }
 
 .icon {
