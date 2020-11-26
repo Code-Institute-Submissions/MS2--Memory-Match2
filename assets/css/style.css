@@ -84,11 +84,11 @@ body {
     perspective: 100rems;
 }
 
-.card:hover .card-back {
+.card.show-card .card-back {
     transform: rotateY(-180deg);
 }
 
-.card:hover .card-front {
+.card.card.show-card .card-front {
     transform: rotateY(0);
 }
 
