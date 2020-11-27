@@ -9,6 +9,19 @@
     <title>Memory Match Game 2</title>
 </head>
 <body>
+    
+<!----------------------------------------------------------------YOU WIN SCREEN-->
+    <div class="you-win-overlay visible">
+        <div class="you-win-text">
+        You win!
+        </div>
+        <div class="overlay-btn-box col-6">
+            <a href="game.html">
+                <button class="overlay-btn">Play again?</button>
+            </a>
+        </div>
+    </div>
+
 <!----------------------------------------------------------------LOGO-->
     <header class="container-fluid">
         <div class="row logo2">
@@ -18,7 +31,7 @@
         </div>
     </header>
 
-<!---------------------------------------------------------------TIMER-->
+<!---------------------------------------------------------------TIMER AND RESET BTN-->
     <div class="container reset-timer-container">
         <div class="row">
             <div class="timer col-6">
@@ -31,7 +44,9 @@
             </div>
         </div>  
     </div>
-<!----------------------------------------------------------------CARDS-->
+
+
+    <!----------------------------------------------------------------CARDS-->
     <div class="container-fluid card-container">  
         <div class="card">
             <div class="card-back card-face">

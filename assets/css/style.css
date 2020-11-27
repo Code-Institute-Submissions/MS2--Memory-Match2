@@ -88,7 +88,7 @@ body {
     transform: rotateY(-180deg);
 }
 
-.card.card.show-card .card-front {
+.card.show-card .card-front {
     transform: rotateY(0);
 }
 
@@ -124,4 +124,58 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
+}
+
+
+/*--------------------------------------------------------YOU WIN OVERLAY STYLING*/
+.you-win-overlay {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: none;
+    
+}
+
+.you-win-overlay.visible {
+    background-color: #032749b8;
+}
+
+.you-win-text {
+    font-family: Righteous, sans-serif;
+    font-size: 10vh;
+    font-style: normal;
+    font-weight: 400;
+    color: #df5a9c;
+    text-align: center;
+}
+
+.overlay-btn {
+    font-family: Righteous, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #032749;
+    border: none;
+    background-color: #99CC33;
+}
+
+.overlay-btn-box {
+    background-color: #99CC33;
+    border: #032749 solid 2px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
 }
