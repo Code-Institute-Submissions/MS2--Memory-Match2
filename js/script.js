@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.game-card').click(function(){
+    $('.card').click(function(){
         $(this).toggleClass('turn');
         
     });

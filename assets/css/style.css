@@ -51,6 +51,81 @@ body {
     max-width: 100%;
 }
 
+
+/*--------------------------------------------------HORIZONTAL RULE STYLING*/
+
+.hr1 {
+    border: none;
+    height: 4px;
+    background-color: #032749;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.hr2 {
+    border: none;
+    height: 3px;
+    background-color: #032749;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/*--------------------------------------------------RULES STYLING*/
+
+.rules-box {
+    font-family: Righteous, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #032749;
+    border: #032749 solid 3px;
+    border-radius: 35px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.rules {
+    padding-bottom: 15%;
+    padding-top: 2rem;
+}
+
+.rules-title {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------START BUTTON STYLING*/
+.startbtn {
+    font-family: Righteous, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    color: #032749;
+    background-color: #99CC33;
+    border: #032749 solid 3px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.startbtnbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
 /*------------------------------------------------------TIMER & RESET BTN STYLING*/
 .reset-timer-container, .reset-btn-box, .reset-btn {
     font-family: Righteous, sans-serif;
