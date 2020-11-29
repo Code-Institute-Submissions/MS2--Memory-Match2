@@ -7,6 +7,7 @@ $(document).ready(function() {
     let firstClick;
     let secondClick;
     let cardFlipped = false;
+    let freezeGame = false;
 
     //cardFlipped set to false as when game starts, no cards are flipped
     //function will set cardFlipped to true
@@ -17,7 +18,7 @@ $(document).ready(function() {
     
 
     function turnCard() {
-
+        if (freezeGame) return;
         $(this).addClass('show-card');
 
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
@@ -30,38 +31,45 @@ $(document).ready(function() {
             cardFlipped = false;
             secondClick = this;
 
-            if (firstClick.dataset.icon === secondClick.dataset.icon) {
-                //If a match, remove event listener to stop card flipping back
-                $(firstClick).off('click', turnCard);
-                $(secondClick).off('click', turnCard);
-            } else {
-                //If not a match remove .show-card class (turns card back around)
-                //Timeout give us time to click second card before first turns over 
-                setTimeout(() => {
-                    $(firstClick).removeClass('show-card');
-                    $(secondClick).removeClass('show-card');    
-                }, 1500);
-                
-                
-            }
-
+            checkCardMatch();
         };
-
-        //check for match
-
-
-        
-        
-        //When element of .card calls clicked, .show-card class will be added if absent and removed if present
-        //This will add css styling to flip the card
         
     }
 
-    
     $('.card').on('click', turnCard);
 
+    function checkCardMatch() {
+        let cardsMatched = firstClick.dataset.icon === secondClick.dataset.icon;
+        
+        if (cardsMatched) {
+            freezeCards();
+        } else {
+            turnCardBack();
+        } 
+            
+    }
 
+    function freezeCards() {
+        $(firstClick).off('click', turnCard);
+        $(secondClick).off('click', turnCard);
+    }
 
+    //Removes .show-card class and turns card back over
+    //Timeout give us time to click second card before first turns over 
+    function turnCardBack() {
+        freezeGame = true;
+
+        setTimeout(() => {
+            $(firstClick).removeClass('show-card');
+            $(secondClick).removeClass('show-card');
+            
+            freezeGame = false
+        }, 1000);
+
+        console.log("class removed!")
+    }
+
+        
 
 });
 
