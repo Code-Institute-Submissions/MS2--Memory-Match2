@@ -16,10 +16,15 @@ $(document).ready(function() {
     //cardFlipped set to false as when game starts game will not be frozen
     //function will set cardFlipped to true to freeze game while cards turn back over
     
+    randomise();
 
     function turnCard() {
         if (freezeGame) return;
+        if (this === firstClick) return;
+        
         $(this).addClass('show-card');
+
+        
 
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
         //and set firstClick to this to target card being targeted
@@ -34,6 +39,14 @@ $(document).ready(function() {
             checkCardMatch();
         };
         
+    }
+
+    function resetCards() {
+        firstClick = null;
+        secondClick = null;
+        freezeGame = false;
+        cardFlipped = false;
+
     }
 
     $('.card').on('click', turnCard);
@@ -69,7 +82,12 @@ $(document).ready(function() {
         console.log("class removed!")
     }
 
-        
+    function randomise() {
+        card.forEach(card => {
+            let randomNum = Math.floor(Math.random() * 12);
+            card.style.order = randomNum;
+        });
+    }  
 
 });
 
