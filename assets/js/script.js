@@ -82,7 +82,8 @@ $(document).ready(function() {
         if (time <= 0 ) {
             clearInterval(time = 0) 
             if (winCount < 6) {
-                $('#lose-sreen').addClass('visible');
+                $('#lose-screen').addClass('visible');
+                timer = 0;
             }
         }
 
@@ -96,7 +97,7 @@ $(document).ready(function() {
     
 
 
-
+    
     //Checks to see if firstCLick datasets equals secondClick. Feezes cards if matched, removes .show-card class and turns back if no a match
     function checkCardMatch() {
         let cardsMatched = firstClick.dataset.icon === secondClick.dataset.icon;
@@ -107,7 +108,14 @@ $(document).ready(function() {
         } else {
             turnCardBack();
         } 
-            
+        checkWin();   
+    }
+
+    function checkWin() {
+        if (winCount == 6) {
+            clearInterval(time = 0)
+            $('#win-screen').addClass('visible');
+        }
     }
 
     //Freezes the cards once turned so they cant turn back on click until another one has been selected (if not a match)
