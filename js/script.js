@@ -4,6 +4,8 @@ $(document).ready(function() {
     const card = document.querySelectorAll(".card");
 
     //Set variable for the first and second card click 
+    let matchCardCounter = 0;
+    let clickCounter = 0;
     let firstClick;
     let secondClick;
     let cardFlipped = false;
@@ -24,17 +26,16 @@ $(document).ready(function() {
 
 
     function turnCard() {
+        clickCounter += 1;
         if (freezeGame) return;
         if (this === firstClick) return;
         
         $(this).addClass('show-card');
-
-        if(firstClick == 1){
+        if(clickCounter == 1){
             second = 60;
             
             startTimer();
         }
-        
 
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
         //and set firstClick to this to target card being targeted
@@ -55,9 +56,7 @@ $(document).ready(function() {
     $('.card').on('click', turnCard);
 
     //Time countdown
-
-    $('.reset-btn-box').on('click', startTimer);
-    let timerOn = true
+    let timerOn = false;
     let time = 60;
     let timer;
     function startTimer() {
@@ -74,11 +73,9 @@ $(document).ready(function() {
     }, 1000);
     }
 
-    let clicked;
-    if (timerOn === true) {
-    startTimer();
-    timerOn = true;
-    }
+    
+
+
 
     //Checks to see if firstCLick datasets equals secondClick. Feezes cards if matched, removes .show-card class and turns back if no a match
     function checkCardMatch() {
