@@ -54,6 +54,30 @@ $(document).ready(function() {
 
     $('.card').on('click', turnCard);
 
+    //Time countdown
+    let timerOn = true
+    let time = 60;
+    let timer;
+    function startTimer() {
+    timer = setInterval(function () {
+        time--;
+
+        //Stops timer from going into a minus
+        if (time <= 0 ) {
+            clearInterval(time = 0) 
+        }
+
+        seconds = ("0" + (time % 60)).slice(-2);
+        document.querySelector(".timer").innerHTML = seconds;
+    }, 1000);
+    }
+
+    let clicked;
+    if (timerOn === true) {
+    startTimer();
+    timerOn = true;
+    }
+
     //Checks to see if firstCLick datasets equals secondClick. Feezes cards if matched, removes .show-card class and turns back if no a match
     function checkCardMatch() {
         let cardsMatched = firstClick.dataset.icon === secondClick.dataset.icon;
@@ -93,24 +117,6 @@ $(document).ready(function() {
         freezeGame = false;
         cardFlipped = false;
 
-    }
-
-    let timerOn = true
-    let time = 60;
-    let timer;
-    function startTimer() {
-    timer = setInterval(function () {
-        time--;
-        minutes = ("0" + Math.floor(time / 60)).slice(-2);
-        seconds = ("0" + (time % 60)).slice(-2);
-        document.querySelector(".timer").innerHTML = minutes + ":" + seconds;
-    }, 1000);
-    }
-
-    let clicked = turnCard();
-    if (timerOn === true) {
-    startTimer();
-    timerOn = true;
     }
 
     
