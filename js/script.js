@@ -8,15 +8,20 @@ $(document).ready(function() {
     let secondClick;
     let cardFlipped = false;
     let freezeGame = false;
-
     //cardFlipped set to false as when game starts, no cards are flipped
     //function will set cardFlipped to true
     
-
-    //cardFlipped set to false as when game starts game will not be frozen
-    //function will set cardFlipped to true to freeze game while cards turn back over
     
     randomise();
+     
+    //Shuffles the cards in a random order
+     function randomise() {
+        card.forEach(card => {
+            let randomNum = Math.floor(Math.random() * 12);
+            card.style.order = randomNum;
+        });
+    }  
+
 
     function turnCard() {
         if (freezeGame) return;
@@ -24,6 +29,11 @@ $(document).ready(function() {
         
         $(this).addClass('show-card');
 
+        if(firstClick == 1){
+            second = 60;
+            
+            startTimer();
+        }
         
 
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
@@ -41,16 +51,10 @@ $(document).ready(function() {
         
     }
 
-    function resetCards() {
-        firstClick = null;
-        secondClick = null;
-        freezeGame = false;
-        cardFlipped = false;
-
-    }
 
     $('.card').on('click', turnCard);
 
+    //Checks to see if firstCLick datasets equals secondClick. Feezes cards if matched, removes .show-card class and turns back if no a match
     function checkCardMatch() {
         let cardsMatched = firstClick.dataset.icon === secondClick.dataset.icon;
         
@@ -62,6 +66,7 @@ $(document).ready(function() {
             
     }
 
+    //Freezes the cards once turned so they cant turn back on click until another one has been selected (if not a match)
     function freezeCards() {
         $(firstClick).off('click', turnCard);
         $(secondClick).off('click', turnCard);
@@ -79,15 +84,37 @@ $(document).ready(function() {
             freezeGame = false
         }, 1000);
 
-        console.log("class removed!")
     }
 
-    function randomise() {
-        card.forEach(card => {
-            let randomNum = Math.floor(Math.random() * 12);
-            card.style.order = randomNum;
-        });
-    }  
+    //Resets cards, unfreezes game, no cards flipped, no first or  second card selected. Game starts again. 
+    function resetCards() {
+        firstClick = null;
+        secondClick = null;
+        freezeGame = false;
+        cardFlipped = false;
+
+    }
+
+    let timerOn = true
+    let time = 60;
+    let timer;
+    function startTimer() {
+    timer = setInterval(function () {
+        time--;
+        seconds = ("0" + (time % 60)).slice(-2);
+        document.querySelector(".timer").innerHTML = seconds;
+    }, 1000);
+    }
+
+    let clicked = turnCard();
+    if (timerOn === true) {
+    startTimer();
+    timerOn = true;
+    }
+
+    
+
+    
 
 });
 
