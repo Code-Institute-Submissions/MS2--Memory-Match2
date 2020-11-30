@@ -101,8 +101,9 @@ $(document).ready(function() {
     function startTimer() {
     timer = setInterval(function () {
         time--;
+        minutes = ("0" + Math.floor(time / 60)).slice(-2);
         seconds = ("0" + (time % 60)).slice(-2);
-        document.querySelector(".timer").innerHTML = seconds;
+        document.querySelector(".timer").innerHTML = minutes + ":" + seconds;
     }, 1000);
     }
 
