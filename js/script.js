@@ -37,6 +37,11 @@ $(document).ready(function() {
             startTimer();
         }
 
+        matchCardCounter += 2;
+        if(matchCardCounter == 2) {
+            loseScreen();
+        }
+
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
         //and set firstClick to this to target card being targeted
         if (!cardFlipped) {
@@ -54,6 +59,11 @@ $(document).ready(function() {
 
 
     $('.card').on('click', turnCard);
+
+    //Lose screen overlay
+    function loseScreen() {
+        
+    }
 
     //Time countdown
     let timerOn = false;
