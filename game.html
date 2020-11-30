@@ -11,26 +11,21 @@
 <body>
     
 <!----------------------------------------------------------------YOU WIN & YOU LOSE SCREEN-->
-    <div id="win-screen" class="you-win-overlay">
-        <div class="you-win-text">
+    <div id="win-screen" class="overlay overlay-text">
         You win!
-        </div>
-        <div class="overlay-btn-box col-6">
-            <a href="game.html">
-                <button class="overlay-btn">Play again?</button>
-            </a>
-        </div>
+        
+        <a href="game.html">
+            <button class="overlay-btn">Play again?</button>
+        </a>
     </div>
-    <div id="lose-screen" class="you-lose-overlay visible">
-        <div class="you-lose-text">
-        Out of time!
-        </div>
-        <div class="lose-overlay-btn-box col-6">
-            <a href="game.html">
-                <button class="lose-overlay-btn">Try again?</button>
-            </a>
-        </div>
+    <div id="lose-screen" class="overlay overlay-text">
+        Out of Time!
+        
+        <a href="game.html">
+            <button class="overlay-btn">Play again?</button>
+        </a>
     </div>
+    
 
 <!----------------------------------------------------------------LOGO-->
     <header class="container-fluid">
@@ -45,7 +40,7 @@
     <div class="container reset-timer-container">
         <div class="row">
             <div class="timer col-6">
-                Time <span class="timer-countdown">60</span>
+                <span class="timer-countdown">60</span>
             </div> 
             <div class="reset-btn-box col-6">
                 <a href="game.html">
