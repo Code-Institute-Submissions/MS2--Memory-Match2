@@ -55,6 +55,8 @@ $(document).ready(function() {
     $('.card').on('click', turnCard);
 
     //Time countdown
+
+    $('.reset-btn-box').on('click', startTimer);
     let timerOn = true
     let time = 60;
     let timer;
