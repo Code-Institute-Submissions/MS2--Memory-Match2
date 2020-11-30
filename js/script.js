@@ -10,6 +10,7 @@ $(document).ready(function() {
     let secondClick;
     let cardFlipped = false;
     let freezeGame = false;
+    let winCount = 0;
     //cardFlipped set to false as when game starts, no cards are flipped
     //function will set cardFlipped to true
     
@@ -80,6 +81,9 @@ $(document).ready(function() {
         //Stops timer from going into a minus
         if (time <= 0 ) {
             clearInterval(time = 0) 
+            if (winCount < 6) {
+                $('#lose-sreen').addClass('visible');
+            }
         }
 
         seconds = ("0" + (time % 60)).slice(-2);
@@ -99,6 +103,7 @@ $(document).ready(function() {
         
         if (cardsMatched) {
             freezeCards();
+            winCount+=1;
         } else {
             turnCardBack();
         } 
@@ -132,6 +137,7 @@ $(document).ready(function() {
         freezeGame = false;
         cardFlipped = false;
 
+        winCount = 0; 
     }
 
     
