@@ -37,10 +37,7 @@ $(document).ready(function() {
             startTimer();
         }
 
-        matchCardCounter += 2;
-        if(matchCardCounter == 2) {
-            loseScreen();
-        }
+        
 
         //If its TRUE that cardFlipped is false, set cardFlipped is true 
         //and set firstClick to this to target card being targeted
@@ -58,19 +55,26 @@ $(document).ready(function() {
     }
 
 
+    function matchCount() {
+    return ++matchCardCounter;
+    }
+
+    console.log( matchCount() );
+    
+
+    
     $('.card').on('click', turnCard);
 
     //Lose screen overlay
-    function loseScreen() {
         
-    }
+
 
     //Time countdown
     let timerOn = false;
     let time = 60;
     let timer;
     function startTimer() {
-    timer = setInterval(function () {
+        timer = setInterval(function () {
         time--;
 
         //Stops timer from going into a minus
@@ -80,7 +84,9 @@ $(document).ready(function() {
 
         seconds = ("0" + (time % 60)).slice(-2);
         document.querySelector(".timer").innerHTML = seconds;
-    }, 1000);
+        }, 1000);
+
+        
     }
 
     

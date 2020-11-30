@@ -48,7 +48,7 @@ body {
 }
 
 .logo2 img {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 
@@ -126,6 +126,101 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);   
 }
+
+/*--------------------------------------------------MEDIA QUERIES FOR CARD & ICON SIZES AND MARGINS*/
+@media only screen and (max-width: 320px){
+
+    .card {
+        background-color: #032749;
+        height: 100px;
+        width: 70px;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 700px){
+
+    .card-container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .card-container {
+        margin-top: 3rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+    
+    .logo2 img {
+        max-width: 60%;
+    }
+
+    .card {
+        height: 150px;
+        width: 120px;
+    }
+
+    img {
+        width: 55%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1400px){
+
+    .card-container {
+        margin-top: 3rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .card {
+        height: 170px;
+        width: 150px;
+    }
+
+    img {
+        width: 60%;
+        height: auto;
+    }
+
+    .logo2 img {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+
+    .card-container {
+        margin-top: 1rem;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .card {
+        background-color: #032749;
+        height: 170px;
+        width: 150px;
+    }
+
+    .icon {
+        width: 60%;
+        height: auto;
+    }
+
+    .logo2 img {
+        max-width: 30%;
+    }
+}
+
 
 
 /*--------------------------------------------------------YOU WIN OVERLAY STYLING*/
