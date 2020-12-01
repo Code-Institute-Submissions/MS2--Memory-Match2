@@ -63,7 +63,7 @@ $(document).ready(function() {
 
     //Time countdown
     let timerOn = false;
-    let time = 60;
+    let time = 30;
     let timer;
     function startTimer() {
         timer = setInterval(function () {
@@ -81,8 +81,8 @@ $(document).ready(function() {
             }
         }
 
-        seconds = ("0" + (time % 60)).slice(-2);
-        document.querySelector(".timer-easy-game").innerHTML = seconds;
+        seconds = ("0" + (time % 30)).slice(-2);
+        document.querySelector(".timer-hard-game").innerHTML = seconds;
         }, 1000);
 
         
@@ -147,10 +147,4 @@ $(document).ready(function() {
 
     
 
-    
-
 });
-
-    
-
-
