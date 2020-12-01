@@ -18,18 +18,18 @@ html {
 }
 
 .easy-background {
-    background-image: linear-gradient(45deg, #79EA10, #11863D);
+    background-image: linear-gradient(45deg, #25bf5e, #79EA10, #0a652c);
     background-repeat: no-repeat;
     
 }
 
 .medium-background {
-    background-image: linear-gradient(45deg, #FFB662, #FE8631);
+    background-image: linear-gradient(45deg, #fde562, #ffb449, #f16400);
     background-repeat: no-repeat;
 }
 
 .hard-background {
-    background-image: linear-gradient(45deg, #DB0E71, #FEACC0);
+    background-image: linear-gradient(45deg, #FF60BF, #FEACC0, #DB0E71);
     background-repeat: no-repeat;
     
 }
@@ -181,6 +181,8 @@ html {
     margin-right: 15%;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .rules {
@@ -378,6 +380,11 @@ html {
         max-width: 50%; 
     }
 
+    .start-screen-logo img {
+        max-width: 50%;
+        margin-top: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1600px){
@@ -400,12 +407,23 @@ html {
     .logo2 img {
         max-width: 30%;
     }
+
+    .start-screen-logo img {
+        max-width: 50%;
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 1920px) {
 
+
     .card-container.container {
         max-width: 40%; 
+    }
+
+    .start-screen-logo img {
+        max-width: 50%;
+        margin-top: 0;
     }
 
 }
