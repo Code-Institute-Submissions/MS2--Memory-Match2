@@ -216,11 +216,11 @@ html {
     font-weight: 400;
     color: #032749;
     padding-bottom: 0.7rem; 
-    display: inline-block;
 }
 
 .reset-home-container {
     text-align: center;
+    justify-items: center;
 }
 
 .reset-timer-container {
@@ -247,13 +247,13 @@ html {
 }
 
 /*--------------------------------------------------------MUSIC STYLING*/
-/*.music-btn-container {
+.music-btn-container {
     color: #032749;
     font-size: 25px;
+    padding-top: 5px;
 }
 
 /*--------------------------------------------------------CARD STYLING*/
-
 
 .card-container {
     display: flex;
