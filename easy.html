@@ -29,8 +29,6 @@
         </a>
     </div>
     
-<!----------------------------------------------------------------HOME BUTTON-->
-    
 
 <!----------------------------------------------------------------LOGO-->
     <header class="container-fluid">
@@ -58,8 +56,10 @@
                     <button class="reset-btn">Home</button>
                 </a>
             <div class="music-btn-container">
-                <i class="fas fa-volume-down music-on"></i>
-                <i class="fas fa-volume-mute music-off"></i>
+                <audio id="music">
+                    <source src="../assets/audio/bensound-jazzcomedy.mp3">
+                </audio>
+                <button id="playPause" class="music-btn"><i class="fas fa-music music-icon"></i></button>
             </div>   
         </div>
     </div>

@@ -57,10 +57,9 @@ $(document).ready(function() {
     
     $('.card').on('click', turnCard);
 
-    //Lose screen overlay
-        
+    
 
-
+    
     //Time countdown
     let timerOn = false;
     let time = 60;
@@ -146,9 +145,23 @@ $(document).ready(function() {
     }
 
     
+    //Music 
+    var music = document.getElementById('music');
+    var playPause = document.getElementById('playPause');
+    var count = 0;
 
-    
-
+    function playPauseMusic() {
+        if (count == 0) {
+            count = 1;
+            music.play();
+        } else {
+            count = 0;
+            music.pause();
+        }
+        
+    }
+        
+    $('#playPause').on('click', playPauseMusic);
 });
 
     
