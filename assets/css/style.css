@@ -34,6 +34,11 @@ html {
     
 }
 
+/*--------------------------------------------HOME BUTTON STYLING*/
+.reset-home-btn {
+    display: inline;
+}
+
 /*--------------------------------------------START BUTTON STYLING*/
 .startbtn {
     font-family: Righteous, sans-serif;
@@ -203,14 +208,28 @@ html {
 }
 
 /*------------------------------------------------------TIMER & RESET BTN STYLING*/
-.reset-timer-container, .reset-btn-box, .reset-btn {
+.reset-btn-box, .reset-btn {
+    font-family: Righteous, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    color: #032749;
+    padding-bottom: 0.7rem; 
+    display: inline-block;
+}
+
+.reset-home-container {
+    text-align: center;
+}
+
+.reset-timer-container {
     font-family: Righteous, sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
     text-align: center;
     color: #032749;
-    padding-bottom: 0.7rem; 
+    padding-bottom: 0.7rem;
 }
 
 .reset-btn {
