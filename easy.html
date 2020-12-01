@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Memory Match Game 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <title>Memory Match Game </title>
 </head>
 <body class="easy-background">
     
@@ -43,13 +44,13 @@
 <!---------------------------------------------------------------TIMER AND RESET BTN-->
     <div class="container reset-timer-container">
         <div class="row">
-            <div class="timer-easy-game col-6">
+            <div class="timer-easy-game col-12">
                 <span class="timer-countdown">60</span>
             </div> 
         </div>  
     </div>
     <div class="container reset-home-container">
-        <div class="row reset-home-btn">
+        <div class="reset-home-btn">
             <div class="reset-btn-box col-6">
                 <a href="easy.html">
                     <button class="reset-btn">Reset</button>
@@ -60,11 +61,15 @@
                     <button class="reset-btn">Home</button>
                 </a>
             </div>
+            <div class="music-btn-container">
+                <i class="fas fa-volume-down music-on"></i>
+                <i class="fas fa-volume-mute music-off"></i>
+            </div>   
         </div>
     </div>
 
     <!----------------------------------------------------------------CARDS-->
-    <div class="container-fluid card-container">  
+    <div class="container card-container"> 
         <div class="card" data-icon="burger">
             <div class="card-back card-face">
                 <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">

@@ -133,6 +133,7 @@ html {
     justify-content: center;
     overflow: hidden;
     padding: 2rem;
+    padding-bottom: 1rem;
 }
 
 .logo2 img {
@@ -229,7 +230,6 @@ html {
     font-weight: 400;
     text-align: center;
     color: #032749;
-    padding-bottom: 0.7rem;
 }
 
 .reset-btn {
@@ -246,12 +246,21 @@ html {
     margin-top: 1rem;
 }
 
+/*--------------------------------------------------------MUSIC STYLING*/
+/*.music-btn-container {
+    color: #032749;
+    font-size: 25px;
+}
+
 /*--------------------------------------------------------CARD STYLING*/
+
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     perspective: 100rems;
+    padding: 0;
 }
 
 .card.show-card .card-back {
