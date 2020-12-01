@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Memory Match Game 2</title>
+</head>
+<body class="easy-background">
+    
+    <div >
+
+    
+    <!----------------------------------------------------------------YOU WIN & YOU LOSE SCREEN-->
+        <div id="win-screen" class="overlay overlay-text">
+            You win!
+            
+            <a href="index.html">
+                <button class="overlay-btn">Play again?</button>
+            </a>
+        </div>
+        <div id="lose-screen" class="overlay overlay-text">
+            Out of Time!
+            
+            <a href="index.html">
+                <button class="overlay-btn">Play again?</button>
+            </a>
+        </div>
+        
+
+    <!----------------------------------------------------------------LOGO-->
+        <header class="container-fluid">
+            <div class="row logo2">
+                
+                <img src="assets/images/Memory-match-logo2.png" alt="Memory match text logo">
+                
+            </div>
+        </header>
+
+    <!---------------------------------------------------------------TIMER AND RESET BTN-->
+        <div class="container reset-timer-container">
+            <div class="row">
+                <div class="timer col-6">
+                    <span class="timer-countdown">60</span>
+                </div> 
+                <div class="reset-btn-box col-6">
+                    <a href="easy.html">
+                        <button class="reset-btn">Reset</button>
+                    </a>
+                </div>
+            </div>  
+        </div>
+
+
+        <!----------------------------------------------------------------CARDS-->
+        <div class="container-fluid card-container">  
+            <div class="card" data-icon="burger">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Burger-icon.png" alt="Burger icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="burger">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Burger-icon.png" alt="Burger icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="pizza">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Pizza-icon.png" alt="Pizza icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="pizza">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Pizza-icon.png" alt="Pizza icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="pasta">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Pasta-icon.png" alt="Pasta icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="pasta">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Pasta-icon.png" alt="Pasta icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="taco">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Taco-icon.png" alt="Taco icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="taco">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Taco-icon.png" alt="Taco icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="chips">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Chips-icon.png" alt="Chips icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="chips">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Chips-icon.png" alt="Chips icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="drumstick">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Drumstick-icon.png" alt="Drumstick icon card">
+                </div>
+            </div>
+            <div class="card" data-icon="drumstick">
+                <div class="card-back card-face">
+                    <img class="icon"src="assets/images/Logo-icon.png" alt="Logo icon card">
+                </div>
+                <div class="card-front card-face">
+                    <img class="icon"src="assets/images/Drumstick-icon.png" alt="Drumstick icon card">
+                </div>
+            </div>
+        </div>
+    </div>  
+
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
