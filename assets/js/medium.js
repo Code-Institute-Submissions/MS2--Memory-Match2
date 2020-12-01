@@ -145,6 +145,22 @@ $(document).ready(function() {
         winCount = 0; 
     }
 
+    //Music
+    var playCount = 0;
+    var music = document.getElementById('music');
     
+    function playPauseMusic() {
+        if (playCount == 0) {
+            playCount = 1;
+            music.play();
+        } else {
+            playCount = 0;
+            music.pause();
+            $('#playPause').toggleClass('.music-pause');
+        }
+        
+    }
+        
+    $('#playPause').on('click', playPauseMusic);
 
 });

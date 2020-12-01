@@ -134,29 +134,30 @@ $(document).ready(function() {
 
     }
 
-    //Resets cards, unfreezes game, no cards flipped, no first or  second card selected. Game starts again. 
+    //Resets cards, unfreezes game, no cards flipped, no first or  second card selected(null). Game resets. 
     function resetCards() {
+
         firstClick = null;
         secondClick = null;
         freezeGame = false;
         cardFlipped = false;
-
-        winCount = 0; 
+        winCount = 0;
+         
     }
 
     
-    //Music 
+    //Music
+    var playCount = 0;
     var music = document.getElementById('music');
-    var playPause = document.getElementById('playPause');
-    var count = 0;
-
+    
     function playPauseMusic() {
-        if (count == 0) {
-            count = 1;
+        if (playCount == 0) {
+            playCount = 1;
             music.play();
         } else {
-            count = 0;
+            playCount = 0;
             music.pause();
+            $('#playPause').toggleClass('.music-pause');
         }
         
     }
