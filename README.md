@@ -1,6 +1,6 @@
-# MS1 - The Love Letter
+# MS2 - Memory Match
 
-The love letter is a prints company selling both pre-made and custom wall prints. The goal of this website is to display the products for sale in a clear and easy to navigate manner to ensure, customers quickly find what they are looking for, as well as establish the brand's image with bright, fun graphics and colours.  
+Memory match is a memory game where players try to find the matching pairs of food behind the cards before their time runs out. Choose from three levels at the start page, easy, medium and hard, each steadily decreasing in time. Perfect for anyone who likes food or has a memory!  
 
 
 ## Demo
