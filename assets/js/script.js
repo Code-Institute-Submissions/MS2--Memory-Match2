@@ -61,9 +61,9 @@ $(document).ready(function() {
 
     
     //Time countdown
-    let timerOn = false;
     let time = 60;
     let timer;
+    let seconds;
     function startTimer() {
         timer = setInterval(function () {
         time--;
@@ -135,16 +135,9 @@ $(document).ready(function() {
     }
 
     //Resets cards, unfreezes game, no cards flipped, no first or  second card selected(null). Game resets. 
-    function resetCards() {
+    
 
-        firstClick = null;
-        secondClick = null;
-        freezeGame = false;
-        cardFlipped = false;
-        winCount = 0;
-         
-    }
-
+    
     
     //Music
     var playCount = 0;
@@ -163,8 +156,7 @@ $(document).ready(function() {
     }
         
     $('#playPause').on('click', playPauseMusic);
-});
 
     
 
-
+});

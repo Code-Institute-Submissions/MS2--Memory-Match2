@@ -15,6 +15,7 @@ html {
     background-image: linear-gradient(45deg, #df5a9c, #64c6e3);
     background-repeat: no-repeat;
     background-color: #df5a9c;
+    overflow: hidden;
     
     
 }
@@ -231,6 +232,11 @@ html {
 }
 
 /*------------------------------------------------------TIMER & RESET BTN STYLING*/
+a:hover {
+    text-decoration: none;
+    color: #032749;
+}
+
 .reset-btn-box, .reset-btn {
     font-family: Righteous, sans-serif;
     font-size: 25px;
@@ -382,6 +388,13 @@ html {
     .logo2 img {
         max-width: 40%;
     }
+
+    .start-screen-logo {
+        padding-top: 1.5rem;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1400px){
