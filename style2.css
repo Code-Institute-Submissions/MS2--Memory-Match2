@@ -15,7 +15,7 @@ html {
     background-image: linear-gradient(45deg, #df5a9c, #64c6e3);
     background-repeat: no-repeat;
     background-color: #df5a9c;
-    
+    overflow: hidden;
     
 }
 
@@ -84,7 +84,6 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
 
 /*------------------------------------------------------------LOGO STYLING*/
 
@@ -171,6 +170,7 @@ html {
     margin-bottom: 7px;
 }
 
+
 /*--------------------------------------------------RULES STYLING*/
 
 .rules-box {
@@ -188,46 +188,17 @@ html {
     padding-bottom: 15px;
     padding-right: 1rem;
     padding-left: 1rem;
-    justify-content: center;
 }
 
 .rules {
     padding-bottom: 15%;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .rules-title {
     margin-bottom: 0;
 }
 
-.rules-title,p {
-    margin-bottom: 0;
-}
-
-
-/*--------------------------------------------------RULES MEDIA QUERIES*/
-@media only screen and (min-width: 700px){
-
-    .rules-box{
-        margin-left: 25%;
-        margin-right: 25%;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        
-    }
-}
-
-@media only screen and (max-width: 320px){
-
-    .rules-box{
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .start-background {
-        overflow: scroll;
-    }
-}
 
 /*------------------------------------------------------TIMER & RESET BTN STYLING*/
 .reset-btn-box, .reset-btn {
@@ -267,7 +238,6 @@ html {
     padding-left: 1rem;
     margin-top: 1rem;
 }
-
 
 /*--------------------------------------------------------CARD STYLING*/
 
@@ -321,6 +291,7 @@ html {
     transform: translate(-50%, -50%);   
 }
 
+
 /*--------------------------------------------------MEDIA QUERIES FOR CARD & ICON SIZES AND MARGINS*/
 @media only screen and (max-width: 320px){
 
@@ -335,7 +306,6 @@ html {
         height: auto;
     }
 }
-
 
 @media only screen and (min-width: 700px){
 
@@ -436,9 +406,6 @@ html {
     }
 
 }
-
-
-
 
 /*--------------------------------------------------------YOU WIN OVERLAY STYLING*/
 .overlay {
