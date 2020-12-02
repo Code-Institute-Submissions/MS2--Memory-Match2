@@ -37,8 +37,8 @@ Levels available to choose on start page to avoid any unnecessary pages taking u
 
 ### Skeleton
 Wireframes created using figma:
-- [**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
--[**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
+-[**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
+-[**Memory Match wireframe - easy level page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
 
 ### Surface
 As the background colours were bright, the layout was kept quite minmal, with all the text in navy blue so it its easily readable to the player. I used a futuristic looking text which while fun, is not a crisp as other fonts so writing had to be kept short and concise so the page didn't begin to look busy. The logo was made from styling a font from figma in Adobe illustrator as it couldn't be located on GoogleFonts. 
