@@ -391,15 +391,17 @@ a:hover {
     }
 
 
-
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1200px) {
     
     .start-screen-logo {
         padding-top: 1rem;
     }
 
+    .start-background {
+        overflow: hidden;
+    }
 
 
 }
