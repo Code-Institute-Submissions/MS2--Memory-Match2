@@ -107,6 +107,9 @@ Screens tested using:
 **Timer**
 Not quite a bug but needs addressing. There are three js files script.js, medium.js, hard.js. Each holds almost identical code for each level. This is because each level has a diffent timer linked to the number of clicks and matches making it difficult combine in one file. After many attempts alone and with tutor support to wrap them in one file, this was the way that gave my game the needed functionality. I thought it best to split the files and have a playable game.  
 
+**Background**
+Again not quite a bug but a solution to an issue of the background not covering the whole screen despite my best efforts. I put a .background class in the <body> tags and that sorted out a days long issue. 
+
 **Music**
 The music plays fine in preview, however after deploying it doesnt work. After rewritng Javascript and HTML code and changing the mp3 file multiple times, I've have not been able to work out this particular bug.
 
