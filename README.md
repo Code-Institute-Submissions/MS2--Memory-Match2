@@ -120,6 +120,10 @@ The music plays fine in preview, however there were issues with it not playing a
 **iOS Gameplay**
 There was an issue with the cards in iOS starting the game icons up because of a .back-visibility class compatibility issue. This has been resolved however, when cards turn back over when they're not a match, there is a slight flickering. 
 
+**Cards**
+Occasionally if you click on a card before it has turned over it momentarily 'locks' so you can't just wait and click it again to turn it. You need to click a diffent card and that releases the previously 'locked' card.
+
+
 **Functionality test sites**
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/) - To check the markup validity of CSS web documents.
