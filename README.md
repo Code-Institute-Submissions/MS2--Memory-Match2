@@ -18,10 +18,13 @@ Memory match is for anyone who wants a light game to pass the time or to genuine
 ### User stories 
 
 When conducting research into potential customers, the points that came up most frequently were:
-- User wants a game thats easy to follow **Addressed in the goal of the game and rules section** 
-- As a user, I want the site to be usable via mobile phone so I can conveniently access it anywhere. **Addressed through responsive mobile first design** 
-- User would prefer a more or less challenging to cater to various abilities **Addressed with levels option** 
-- As a user, sound isn't imperitive, but its a thoughtful touch and must have option to start and stop **Addressed with click start and pause music**  
+- User wants a game thats easy to follow  
+- As a user, I want the site to be usable via mobile phone so I can conveniently access it anywhere. 
+- User would prefer a more or less challenging to cater to various abilities 
+- As a user, sound isn't imperitive, but its a thoughtful touch and must have option to start and stop
+- Users expect that the cards will be in pairs and can all be accessed
+- When a user wins or loses they need to be notified 
+- Users need to have some kind of stakes, like time running out 
 
 ### Strategy
 To draw potential players in with colours and layout, then keep them with the game itself as they try to beat the levels.
@@ -34,7 +37,7 @@ Levels available to choose on start page to avoid any unnecessary pages taking u
 
 ### Skeleton
 Wireframes created using figma:
-- [**The Love Letter wireframe**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
+- [**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
 (https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
 
 ### Surface
@@ -67,7 +70,13 @@ A choice of levels allows player to choose based on time available and abilty. S
 
 ## Testing
 
-All links within the site function correctly and take you to the appropiate section.
+User wants a game thats easy to follow  
+- As a user, I want the site to be usable via mobile phone so I can conveniently access it anywhere. 
+- User would prefer a more or less challenging to cater to various abilities 
+- As a user, sound isn't imperitive, but its a thoughtful touch and must have option to start and stop
+- Users expect that the cards will be in pairs and can all be accessed
+- When a user wins or loses they need to be notified 
+- Users need to have some kind of stakes, like time running out 
 
 The site was tested across multiple screens sizes both personally and via inspect. Personally, it was opened on an iPhoneX, iPad mini, iPad Pro, iMac, Macbook Pro, as well as a 15.3" and 17.3" Windows laptops. All screen sizes worked as desired. There is a need to scroll down slightly to see the full card grid on laptops due to their landscape  orientation and the cards needing to be larger on these screens. However only the logo is partially obscured. All the navigational buttons on the game page are fully visble and functional.
 
@@ -79,15 +88,21 @@ In mobile view the footer text appear one beneath the other to fit the available
 
 ## Bugs
 
-**Cards**
+**Timer**
+Not quite a bug but needs addressing. There are three js files script.js, medium.js, hard.js. Each holds almost identical code for each level. This is because each level has a diffent timer linked to the number of clicks and matches making it difficult combine in one file. After many attempts alone and with tutor support to wrap them in one file, this was the way that gave my game the needed functionality. I thought it best to split the files and have a playable game.  
 
-A faint white border appears sporadically around the cards via inspection but not in physical tests, although all borders have been removed this problem persists. 
+**Music**
+
+The music plays fine in browsers, however after deploying it doesnt work. I've tried many things and it seems beyond my skillset at the moment 
+[Here](http://127.0.0.1:5502/easy.html) You can find a version of the site with the music working last the time I checked. 
 
 **Functionality test sites**
 
 [CSS Validator](https://jigsaw.w3.org/css-validator/) - To check the markup validity of CSS web documents.
 [HTML Validator](https://validator.w3.org/) - To check the markup validity of HTML web documents.
 [Gtmetrix](https://gtmetrix.com/) - To test site speed 
+[JSHint](https://jshint.com/) - To check Javascript code 
+
 
 **Site loading**
 
@@ -101,7 +116,10 @@ The submit button is linked to 'home', which when clicked is to take you to the 
 
 ## Deployment
 
-The Love Letter is hosted on GitHub pages, deployed from the master branch. The deployed site will update automatically upon new commits to the master branch.
+Memory Match was created using VSCode and is hosted on GitHub pages, deployed from the master branch. The deployed site will update automatically upon new pushes to the master branch.
+
+#To deploy to GitHub pages:
+
 
 To run locally, clone this repository directly into your chosen editor by pasting the link into your terminal. To remove from this GitHub repository, type ```git remote rm origin``` into the terminal.
 
@@ -116,13 +134,18 @@ To run locally, clone this repository directly into your chosen editor by pastin
 ### Media
 
 **Logo**
-
 'Memory' text from the logo was coped from [Figma.com](https://www.figma.com/files/recent) and altered in Adobe Illustrator with a full licence.
 
 **Icons**
 Icon drawings from [Freepik.com](https://www.freepik.com/free-vector/background-with-fast-food_2528397.htm#page=3&query=fast+food&position=22) and altered in Adobe Illustrator with a full licence.
 
+**Audio**
+Fuzzball Parade by Kevin MacLeod
+Link: (https://incompetech.filmmusic.io/song/5044-fuzzball-parade)
+License: (http://creativecommons.org/licenses/by/4.0/)
+
+
 ### Acknowledgements
 
-I received inspiration for this project from my sister's caligraphy [instagram page](https://www.instagram.com/_theloveletter/). I have her permission to use the name.  
+  
 
