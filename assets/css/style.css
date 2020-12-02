@@ -315,6 +315,7 @@ a:hover {
     justify-content: center;
     align-content: center;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: transform 600ms ease-in-out;
 }
 
