@@ -131,7 +131,6 @@ html {
 
 .start-screen-logo img {
     max-width: 80%;
-    margin-top: 2rem;
 }
 
 .logo2 {
@@ -281,7 +280,6 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    perspective: 100rems;
     padding: 0;
 }
 
@@ -388,10 +386,23 @@ a:hover {
         max-width: 40%;
     }
 
-    .start-screen-logo {
-        padding-top: 1.5rem;
+    .start-background {
+        overflow: hidden;
     }
 
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+    
+    .start-screen-logo {
+        padding-top: 1rem;
+    }
+
+    .start-background {
+        overflow: hidden;
+    }
 
 
 }
@@ -407,10 +418,7 @@ a:hover {
         margin-top: 0;
     }
 
-    .start-background {
-        overflow: hidden;
-    }
-
+    
 }
 
 @media only screen and (min-width: 1600px){
