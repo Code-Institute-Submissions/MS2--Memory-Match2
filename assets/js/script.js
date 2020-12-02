@@ -143,20 +143,14 @@ $(document).ready(function() {
             playCount = 1;
             music.play();
         } else {
-            pauseMusic();
+            playCount = 0;
+            music.pause();
             
         }
         
     }
-
-    function pauseMusic() {
-        playCount = 0;
-        music.pause();
-    }
         
     $('#playPause').on('click', playPauseMusic);
-
-    
 
     
 
