@@ -45,6 +45,7 @@ As the background colours were bright, the layout was kept quite minimal, with a
 
 Text used: 
 **Righteous**- For rules and button text 
+
 **Nico Moji**- Styled text from Figma
 
 ## Features
