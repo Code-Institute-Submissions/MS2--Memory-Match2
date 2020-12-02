@@ -5,7 +5,7 @@ Memory match is a memory game where players try to find the matching pairs of fo
 
 ## Demo
 
-Click [here](https://darlyn-lurikah.github.io/MS1-The-Love-Letter/) for a live demo version
+Click [here](https://darlyn-lurikah.github.io/MS2--Memory-Match2/) for a live demo version
 
 ![Site screen display](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20match%20screens%20screenshot.png)
 
@@ -18,17 +18,16 @@ Memory match is for anyone who wants a light game to pass the time or to genuine
 ### User stories 
 
 When conducting research into potential customers, the points that came up most frequently were:
-- As a user, I want to the products to be easy to find, so I can select one quickly. **Addressed in print section** 
+- User wants a game thats easy to follow **Addressed in the goal of the game and rules section** 
 - As a user, I want the site to be usable via mobile phone so I can conveniently access it anywhere. **Addressed through responsive mobile first design** 
-- As a user, I want to know about the brief history of the business to determine trustworthiness. **Addressed in about section** 
-- As a user, I want to know the cost of products upfront to decide whether to buy. **Addressed in print section** 
-- As a user, I need the company to have social media to keep up with any new products or services. **Addressed in footer** 
+- User would prefer a more or less challenging to cater to various abilities **Addressed with levels option** 
+- As a user, sound isn't imperitive, but its a thoughtful touch and must have option to start and stop **Addressed with click start and pause music**  
 
 ### Strategy
-To sell prints and a custom prints service using a user friendly 'one page' design, with a clear layout that also stays true to the company branding. 
+To draw potential players in with colours and layout, then keep them with the game itself as they try to beat the levels.
 
 ### Scope 
-Providing customers with a brief company background, then all products and services set out and well labeled so they can browse and find what they are looking for.
+The best games are usually the most simple. I wanted to give players one that does take too much thought and can keep them enertained for an hour or 5 minutes.
 
 ### Structure 
 Fixed top navigation bar to get to desired sections of the site easily. Information given is a short uncomplicated read. The function of each section of the site is labelled and  apparent to customer. 
