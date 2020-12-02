@@ -30,7 +30,7 @@ To draw potential players in with colours and layout, then keep them with the ga
 The best games are usually the most simple. I wanted to give players one that does take too much thought and can keep them enertained for an hour or 5 minutes.
 
 ### Structure 
-Fixed top navigation bar to get to desired sections of the site easily. Information given is a short uncomplicated read. The function of each section of the site is labelled and  apparent to customer. 
+Levels available to choose on start page to avoid any unnecessary pages taking up time. The levels buttons are clearly labelled so player knows off the bat which they might prefer without extra clicks. The rules are displayed on the start page so its one of the first things the player sees. Like the levels buttons, the navigation buttons on the game page are clearly labelled so there is no confusion that could impace gameplay. All levels are laid out the same for visual and naviagational consistency. 
 
 ### Skeleton
 Wireframes created using figma:
