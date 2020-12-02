@@ -135,11 +135,6 @@ $(document).ready(function() {
     }
 
     //Resets cards, unfreezes game, no cards flipped, no first or  second card selected(null). Game resets. 
-    
-
-    
-    
-    //Music
     var playCount = 0;
     var music = document.getElementById('music');
     
@@ -150,12 +145,14 @@ $(document).ready(function() {
         } else {
             playCount = 0;
             music.pause();
-            $('#playPause').toggleClass('.music-pause');
+            
         }
         
     }
         
     $('#playPause').on('click', playPauseMusic);
+
+    
 
     
 
