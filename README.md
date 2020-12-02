@@ -127,23 +127,37 @@ Logo and icons can become somewhat pixelated on larger screens. This was address
 
 Memory Match was created using VSCode and is hosted on GitHub pages, deployed from the master branch. The deployed site will update automatically upon new pushes to the master branch.
 
-To deploy to GitHub pages:
-1. In my respository [here]() and select settings
-2. In settings at the very top you can rename your repository
-3. Scroll down to the GitHub pahes section 
-
 #To deploy to GitHub pages:
+1. In my respository [here](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/tree/master) and select settings
+2. In settings at the very top you can rename your repository
+3. Scroll down to the GitHub pages section and select master branch and root folder
+4. Press save and a link with the deployed site come up on the Github Pages section.
+5. For ease of access, paste into the About section in your repository so its easy for yourself and others to find 
 
-
-To run locally, clone this repository directly into your chosen editor by pasting the link into your terminal. To remove from this GitHub repository, type ```git remote rm origin``` into the terminal.
-
+#To clone from GitHub:
+1. In my respository [here](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/tree/master) and select Code 
+2. In the dropdown menu select the clipboard beside the link of HTTPS
+3. In your desired terminal input ```git clone (copied url) ``` minus the parentheses and press enter
+4. Now you have a local clone to edit, without affecting the original repository 
 
 
 ## Credits
 
-### Content
+# Audio 
+Credit for timer in all js files goes to [Cukmekerb's Coding Class](https://www.youtube.com/watch?v=p4OHVJxd2FI&t=70s&ab_channel=InventionTricksInventionTricks) for line 144 (and as a result) 147. These two lines helped bring my if statement together and make my audio correctly click-able. 
 
-- The text for the callout section hyperlink to remove the on click underline was copied from the [Stack Overflow](https://stackoverflow.com/questions/27989672/why-is-link-underline-appearing-after-clicking-the-link)
+# Game logic 
+Credit for helping me undestand the logic and requirements of this game goes to [Scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript)
+
+# General 
+Credit to Stack Overflow. While no code was taken from there, it was extremely helpful in idenifying where I was going wrong especially with syntax errors and longer functions
+Credit to [W3Schools](https://www.w3schools.com/css/default.asp) for refreshing my knowledge of HTML and CSS 
+# Fonts
+Credit to [Google Fonts](https://fonts.google.com/?sidebar.open=true&selection.family=Righteous) for fonts 
+Credit to [Figma](https://www.figma.com/) for logo font
+
+# Game function 
+Credit to for [marina-ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) in js line 10, 44, 45 and 49 when I was lost on how to bring the statement together to flip my cards 
 
 ### Media
 
@@ -160,6 +174,5 @@ License: (http://creativecommons.org/licenses/by/4.0/)
 
 
 ### Acknowledgements
-
-  
-
+ Special thanks to the Code Institue tutors and everyone on slack who have all been very helpful and given many interesting topic to research to better my work.
+ Also thanks to my mum for checking up on me during my 500 allnighters even though I'm 105 years old.
