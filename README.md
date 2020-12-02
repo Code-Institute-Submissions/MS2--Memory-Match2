@@ -34,7 +34,7 @@ Levels available to choose on start page to avoid any unnecessary pages taking u
 
 ### Skeleton
 Wireframes created using figma:
-- [**The Love Letter wireframe**](https://github.com/Darlyn-Lurikah/MS1-The-Love-Letter/blob/master/mockups/The%20Love%20Letter%20wireframe.pdf) 
+- [**The Love Letter wireframe**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
 
 ### Surface 
 As the fruity background is eyecatching, the print section needed a plain background to ensure the products were clearly visible and branding did not overtake usability. 
