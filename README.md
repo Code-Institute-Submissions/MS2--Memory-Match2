@@ -35,28 +35,23 @@ Levels available to choose on start page to avoid any unnecessary pages taking u
 ### Skeleton
 Wireframes created using figma:
 - [**The Love Letter wireframe**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
+(https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
 
-### Surface 
-As the fruity background is eyecatching, the print section needed a plain background to ensure the products were clearly visible and branding did not overtake usability. 
-With bright and busy site branding, the text had to be simple and clean: 
+### Surface
+As the background colours were bright, the layout was kept quite minmal, with all the text in navy blue so it its easily readable to the player. I used a futuristic looking text which while fun, is not a crisp as other fonts so writing had to be kept short and concise so the page didn't begin to look busy. The logo was made from styling a font from figma in Adobe illustrator as it couldn't be located on GoogleFonts. 
 
-**Roboto**- For general information throughout
-
-**Oswald**- For the logo 
-
-**Bowlby One SC**- For the callout
-
-
+Text used: 
+**Righteous**- For rules and button text 
+**Nico Moji**- Styled text from Figma
 
 ## Features
 
-A fixed top navbar ensures customers can navigate to all sections regardless of which one they are currently in. The callout is linked to the print section to go straight to the products advertised. A one page site with various sections reduces loading times and allows for a speedier naviagation, which in turn gives the customer a better site experience. 
- 
+A choice of levels allows player to choose based on time available and abilty. Start page acts as a navbar to easily move through the pages. Music can be started and stopped by player for a quiet game or a jiggle in their seat while they flip cards. Reset and home button on the game page let player reset their game when they like and go back to the home page to pick a new level quickly. 
  
 ### Features Left to Implement
 
-- Newsletter sign up - Users can keep up to date with any changes to service, new print additions and discount codes 
-- Login - To allow returning customers to purchase through their own account with saved information to streamline the process and cut down on time 
+- Score and star rating systen  
+- A leaderboard so player can compare their current score to their previous scores  
 
 
 
@@ -64,6 +59,7 @@ A fixed top navbar ensures customers can navigate to all sections regardless of 
 
 - **HTML** - To write up base website
 - **CSS** - To style website to make it visually appealing
+- **JavaScript** - For an interactive game and website 
 - **[Bootstrap](https://getbootstrap.com/)** - For responsive design  
 - **[Figma](https://www.figma.com/)** - To create wireframe
 
@@ -71,9 +67,9 @@ A fixed top navbar ensures customers can navigate to all sections regardless of 
 
 ## Testing
 
-All links within the site function correctly and take you to the appropiate section. The submit button takes you to the top of the page as there is no 'completed' event. Social media links open to the home page of each social site. 
+All links within the site function correctly and take you to the appropiate section.
 
-The site was tested across multiple screens sizes both personally and via inspect. Personally, it was opened on an iPhoneX, iPad mini, iPad Pro, iMac, Macbook Pro, as well as a 15.3" and 17.3" Windows laptops. All screen sizes worked as desired.
+The site was tested across multiple screens sizes both personally and via inspect. Personally, it was opened on an iPhoneX, iPad mini, iPad Pro, iMac, Macbook Pro, as well as a 15.3" and 17.3" Windows laptops. All screen sizes worked as desired. There is a need to scroll down slightly to see the full card grid on laptops due to their landscape  orientation and the cards needing to be larger on these screens. However only the logo is partially obscured. All the navigational buttons on the game page are fully visble and functional.
 
 In Chrome, Internet Explorer and Safari via inspect, the site displayed and functioned as intended at all screen sizes. In all cases, the callout images changes between phone, tablet and laptop/desktop were displayed correctly. The logo text size is also subject to change between screen sizes and does so at the stated points. The navagtion bar collapses at mobile veiw to accomodate the size change. 
 
@@ -119,13 +115,12 @@ To run locally, clone this repository directly into your chosen editor by pastin
 
 ### Media
 
-**Callout**
+**Logo**
 
-Images bought from [Almay.com](https://www.alamy.com/) with full licence to be used in project.
+'Memory' text from the logo was coped from [Figma.com](https://www.figma.com/files/recent) and altered in Adobe Illustrator with a full licence.
 
-**Prints**
-
-Created by myself using a paid for Adobe Illustator licence 
+**Icons**
+Icon drawings from [Freepik.com](https://www.freepik.com/free-vector/background-with-fast-food_2528397.htm#page=3&query=fast+food&position=22) and altered in Adobe Illustrator with a full licence.
 
 ### Acknowledgements
 
