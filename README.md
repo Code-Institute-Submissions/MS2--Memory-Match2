@@ -43,7 +43,8 @@ Wireframes created using Figma:
 ### Surface
 As the background colours were bright, the layout was kept quite minimal, with all the text in navy blue so its easily readable to the player against the colours. I used a futuristic looking text which while fun, is not a crisp as other fonts so writing had to be kept short and concise, so the page didn't begin to look busy. The logo was made from styling a font from Figma in Adobe illustrator as it could not be located on Google Fonts. 
 
-Text used: 
+Text used:
+
 **Righteous**- For rules and button text 
 
 **Nico Moji**- Styled text from Figma
