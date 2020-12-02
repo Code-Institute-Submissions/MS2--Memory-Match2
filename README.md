@@ -38,7 +38,7 @@ Levels available to choose on start page to avoid any unnecessary pages taking u
 ### Skeleton
 Wireframes created using figma:
 - [**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20level%20page.pdf) 
-(https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
+-[**Memory Match wireframe - levels page**](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20Match%20-%20level%20easy.pdf)
 
 ### Surface
 As the background colours were bright, the layout was kept quite minmal, with all the text in navy blue so it its easily readable to the player. I used a futuristic looking text which while fun, is not a crisp as other fonts so writing had to be kept short and concise so the page didn't begin to look busy. The logo was made from styling a font from figma in Adobe illustrator as it couldn't be located on GoogleFonts. 
@@ -65,24 +65,40 @@ A choice of levels allows player to choose based on time available and abilty. S
 - **JavaScript** - For an interactive game and website 
 - **[Bootstrap](https://getbootstrap.com/)** - For responsive design  
 - **[Figma](https://www.figma.com/)** - To create wireframe
+- **[JQuery](https://jquery.com/)** - For 'shorthand' Javascript 
 
 
 
 ## Testing
 
-User wants a game thats easy to follow  
-- As a user, I want the site to be usable via mobile phone so I can conveniently access it anywhere. 
-- User would prefer a more or less challenging to cater to various abilities 
-- As a user, sound isn't imperitive, but its a thoughtful touch and must have option to start and stop
-- Users expect that the cards will be in pairs and can all be accessed
-- When a user wins or loses they need to be notified 
-- Users need to have some kind of stakes, like time running out 
+# Screens 
+The site was tested across multiple screens sizes both personally and via inspect. Personally, it was opened on an iPhoneX, iPad mini, iPad Pro, iMac, Macbook Pro, as well as a 15.3" and 17.3" Windows laptops. Across the screens the site worked visually and the game could be played as desired. Breakpoints are working well when tested. 
 
-The site was tested across multiple screens sizes both personally and via inspect. Personally, it was opened on an iPhoneX, iPad mini, iPad Pro, iMac, Macbook Pro, as well as a 15.3" and 17.3" Windows laptops. All screen sizes worked as desired. There is a need to scroll down slightly to see the full card grid on laptops due to their landscape  orientation and the cards needing to be larger on these screens. However only the logo is partially obscured. All the navigational buttons on the game page are fully visble and functional.
+Screens tested using:
+- iphone 7-11
+- Laptop 15in, 17in 
+- iMac
+- Chrome
+- Microsoft Edge
+- Safari
 
-In Chrome, Internet Explorer and Safari via inspect, the site displayed and functioned as intended at all screen sizes. In all cases, the callout images changes between phone, tablet and laptop/desktop were displayed correctly. The logo text size is also subject to change between screen sizes and does so at the stated points. The navagtion bar collapses at mobile veiw to accomodate the size change. 
+# Scroll
+ There is a need to scroll down slightly to see the full card grid on laptops due to their landscape  orientation and the cards needing to be larger on these screens. However    only the logo is partially obscured. All the navigational buttons on the game page are fully visble and functional.
 
-In mobile view the footer text appear one beneath the other to fit the available space while remaining readable.
+ # Levels 
+ Levels work as desired across my test screens. They can be viewed and accessed via the start screen. 
+ 
+ # Audio
+ Audio is not available on the deployed website, but works well in local preview in all above mentioned screens and Chrome Developer tools. In preview the audio can be started and paused but clicking the music button. Addressed in more detail in bugs section. 
+ 
+ # Card match
+ In all tested browers and screen sizes, the game was fully playable. Cards were able to flip when clicked first, wait for second card, if a match is made, they match, if not they turn back over. 
+ 
+ # Win or Lose 
+ In all tested browsers and screens when all matches are made a win screen comes up and when the timer hits 0 a lose screen. 
+ 
+ # Timer
+ Timer is functional across all tested browers and screen, counting down from 60, 40 and 30 depending on the level. Possible issue with timer addressed in bugs section
 
 
 
@@ -92,9 +108,8 @@ In mobile view the footer text appear one beneath the other to fit the available
 Not quite a bug but needs addressing. There are three js files script.js, medium.js, hard.js. Each holds almost identical code for each level. This is because each level has a diffent timer linked to the number of clicks and matches making it difficult combine in one file. After many attempts alone and with tutor support to wrap them in one file, this was the way that gave my game the needed functionality. I thought it best to split the files and have a playable game.  
 
 **Music**
+The music plays fine in preview, however after deploying it doesnt work. After rewritng Javascript and HTML code and changing the mp3 file multiple times, I've have not been able to work out this particular bug.
 
-The music plays fine in browsers, however after deploying it doesnt work. I've tried many things and it seems beyond my skillset at the moment 
-[Here](http://127.0.0.1:5502/easy.html) You can find a version of the site with the music working last the time I checked. 
 
 **Functionality test sites**
 
@@ -104,19 +119,18 @@ The music plays fine in browsers, however after deploying it doesnt work. I've t
 [JSHint](https://jshint.com/) - To check Javascript code 
 
 
-**Site loading**
-
-Although optimized, the callout image still remains a medium file and somwhat slows the loading of the site. However, there had to be a compromise between file size and image quality for the overall aethetic. 
-
-**Submit**
-
-The submit button is linked to 'home', which when clicked is to take you to the top of the page. However it occasionally, across all screen sizes fails to do so until the page is refreshed. Another issue is it sometimes stops at the print section instead of the top, also rectified when the page is refreshed. 
-
+**Image quality**
+Logo and icons can become somewhat pixelated on larger screens. This was addressed by using higher quality one, but problem persists as I needed to strike a balance between quality of image and page load time. 
 
 
 ## Deployment
 
 Memory Match was created using VSCode and is hosted on GitHub pages, deployed from the master branch. The deployed site will update automatically upon new pushes to the master branch.
+
+To deploy to GitHub pages:
+1. In my respository [here]() and select settings
+2. In settings at the very top you can rename your repository
+3. Scroll down to the GitHub pahes section 
 
 #To deploy to GitHub pages:
 
