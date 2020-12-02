@@ -143,11 +143,15 @@ $(document).ready(function() {
             playCount = 1;
             music.play();
         } else {
-            playCount = 0;
-            music.pause();
+            pauseMusic();
             
         }
         
+    }
+
+    function pauseMusic() {
+        playCount = 0;
+        music.pause();
     }
         
     $('#playPause').on('click', playPauseMusic);
