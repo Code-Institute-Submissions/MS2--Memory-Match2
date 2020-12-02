@@ -7,13 +7,13 @@ Memory match is a memory game where players try to find the matching pairs of fo
 
 Click [here](https://darlyn-lurikah.github.io/MS1-The-Love-Letter/) for a live demo version
 
-![Site screen display](https://github.com/Darlyn-Lurikah/MS1-The-Love-Letter/blob/master/assets/images/The%20Love%20Letter%20-%20Screen%20displays.png)
+![Site screen display](https://github.com/Darlyn-Lurikah/MS2--Memory-Match2/blob/master/assets/Memory%20match%20screens%20screenshot.png)
 
 
 
 ## UX
 
-The Love letter is for anyone looking for prints with fun, odd or ispirational (maybe all three) quotes. The layout needed to be simple and clear, given the quirky branding, to lead customers easily to the prints for sale and custom print service provided with ease. 
+Memory match is for anyone who wants a light game to pass the time or to genuinely challenge themselves to remember the placement of the food icons. The layout is simple and the naviation clear so players don't get frustrated or lose interest trying to find their way around. As the game is so straightforward, I've employed a bright and eyecatching colour scheme so the player doesn't get bored.  
 
 ### User stories 
 
