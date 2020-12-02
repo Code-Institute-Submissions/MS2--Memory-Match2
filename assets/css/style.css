@@ -15,7 +15,6 @@ html {
     background-image: linear-gradient(45deg, #df5a9c, #64c6e3);
     background-repeat: no-repeat;
     background-color: #df5a9c;
-    overflow: hidden;
     
     
 }
@@ -406,6 +405,10 @@ a:hover {
     .start-screen-logo img {
         max-width: 50%;
         margin-top: 0;
+    }
+
+    .start-background {
+        overflow: hidden;
     }
 
 }
